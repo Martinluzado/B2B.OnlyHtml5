@@ -1,0 +1,430 @@
+body {
+    font-family: 'Poppins';
+    background-color: #ffffff;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* BACKGROUND CRUZADO AL FONDO */
+.skewed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(110,110,110,1) 46%, rgba(255,255,255,1) 86%);
+    z-index: -1;
+    transform: skewY(-5deg);
+    transform-origin: top left;
+}
+
+.headerDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titleWeb {
+    color: white;
+    font-size: 30px;
+    margin-right: 0;
+}
+
+/* INPUT STYLE */
+.divInput {
+    border: 2px solid #ffffff;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.inputHeader::-webkit-search-cancel-button {
+    position: relative;
+    right: 20px;
+    -webkit-appearance: none;
+}
+
+.inputHeader {
+    font-size: medium;
+    border: none;
+    background: none;
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+    outline: none;
+    width: 400px;
+    text-indent: 20px;
+    margin-bottom: 6px;
+}
+
+.buttonHeader {
+    font-size: x-large;
+    color: rgb(35, 35, 35);
+    background-color: white;
+    border: none;
+    margin-right: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* BUTTON LOGIN REGISTER STYLE */
+.buttonContainer {
+    margin-left: 5%;
+}
+
+.classLoginRegister1 {
+    font-size: large;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background: none;
+    color: #ffffff;
+    transition: 0.1s;
+}
+
+.classLoginRegister1:hover {
+    scale: 1.2;
+}
+
+.classLoginRegister2 {
+    font-size: large;
+    border-radius: 10px;
+    border: none;
+    background: none;
+    color: #ffffff;
+    transition: 0.1s;
+}
+
+.classLoginRegister2:hover {
+    scale: 1.2;
+}
+
+/* CARD STYLE  */
+.navContainer {
+    margin-top: 5%;
+    margin-bottom:5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: none;
+    border-radius: 10px;
+    width: 350px;
+    margin: 0;
+}
+
+.card-img-top {
+    width: 350px;
+    height: 250px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: rgb(35, 35, 35);
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.card-text {
+    color: rgb(35, 35, 35);
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 20%;
+}
+
+.buttonCard {
+    font-size: large;
+    border-radius: 10px;
+    background-color: rgb(35, 35, 35);
+    border: 5px solid rgb(35, 35, 35);
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: 0.1s;
+}
+
+.buttonCard:hover {
+    font-size: large;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 5px solid white;
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+    margin-bottom: 20px;
+    scale: 1.2;
+}
+
+.centerElementCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+
+/* MAIN STYLE */
+.ImagenDeFondo {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 80%;
+    object-fit:cover;
+    background-color: none;
+    z-index: -1;
+    transform: skewY(-5deg);
+    transform-origin: top left;
+    filter:saturate(0);
+}
+
+.h1Main {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+}
+
+.p1Main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: large;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.h3Main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: x-large;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom:4%;
+}
+
+/* PRECIOS TARJETAS */
+
+/* CARD STYLE  */
+.navContainer2 {
+    margin-bottom:5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.card2 {
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: none;
+    border-radius: 10px;
+    width: 350px;
+    margin: 0;
+}
+
+.card-img-top2 {
+    width: 350px;
+    height: 250px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+}
+
+.card-title2 {
+    color: rgb(35, 35, 35);
+    font-size: 40px;
+    margin-top: 10%;
+    margin-bottom: 0;
+    font-weight: lighter;
+}
+
+.card-text2 {
+    color: rgb(35, 35, 35);
+    font-size: x-large;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 10%;
+    margin-top: 0;
+}
+
+.card-text3 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(253, 101, 0);
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 0%;
+    text-decoration: line-through;
+}
+
+.card-text5 {
+    color: gray;
+    margin: 0;
+    font-weight:lighter;
+}
+
+.buttonCard2 {
+    font-size: large;
+    border-radius: 10px;
+    background-color: rgb(35, 35, 35);
+    border: 5px solid rgb(35, 35, 35);
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10%;
+    margin-top: 15%;
+    transition: 0.1s;
+}
+
+.buttonCard2:hover {
+    font-size: large;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 5px solid white;
+    color: #828282;
+    text-decoration: none;
+    margin-bottom: 20px;
+    scale: 1.2;
+}
+
+.centerElementCard2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+/* FOOTER */
+.footer{
+    background: rgb(35, 35, 35);
+    width: 100vw;
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+}
+.h3Footer{
+    font-size: x-large;
+    color: white;
+}
+.pFooter{
+    color:white;
+    font-weight: lighter;
+    font-size: small;
+}
+.Icons{
+    display: flex;
+    color: white;
+}
+.iconicon{
+margin: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-family: 'Poppins';
+        background-color: #ffffff;
+        overflow-x: hidden;
+        margin: 0;
+    }
+    .headerDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .divInput {
+        border: 2px solid #ffffff;
+        background: rgb(255, 255, 255);
+        border-radius: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .inputHeader::-webkit-search-cancel-button {
+        position: relative;
+        right: 20px;
+        -webkit-appearance: none;
+    }
+    
+    .inputHeader {
+        font-size: medium;
+        border: none;
+        background: none;
+        color: rgb(35, 35, 35);
+        text-decoration: none;
+        outline: none;
+        width: 200px;
+        text-indent: 20px;
+        margin-bottom: 6px;
+    }
+    .Main{
+        background-color: #828282;
+    }
+    .navContainer {
+        margin-top: 5%;
+        margin-bottom:5%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: stretch;
+        margin-left: 10%;
+        margin-right: 10%;
+        gap: 20px;
+    }
+    .card-img-top {
+        width: 350px;
+        height: 250px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        object-fit: cover;
+    }
+    .navContainer2 {
+        margin-top: 5%;
+        margin-bottom:5%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: stretch;
+        margin-left: 10%;
+        margin-right: 10%;
+        gap: 20px;
+    }
+    .card-img-top2 {
+        width: 350px;
+        height: 250px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        object-fit: cover;
+    }
+    .ImagenDeFondo {
+      display: none;
+    }
+  }
